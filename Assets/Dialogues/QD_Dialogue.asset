@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fc788fe28a1947c5906bf24c0472406, type: 3}
+  m_Name: QD_Dialogue
+  m_EditorClassIdentifier: 
+  Conversations:
+  - ID: 3
+    Name: Start
+    FirstMessage: 4
+  Speakers:
+  - ID: 0
+    Name: Abelinha
+    Icon: {fileID: 0}
+  - ID: 5
+    Name: Formiga
+    Icon: {fileID: 0}
+  Messages:
+  - ID: 4
+    Speaker: 5
+    SpeakerName: Formiga
+    PreviousMessage: -1
+    NextMessage: 6
+    MessageText: O que aconteceu abelinha?
+    Clip: {fileID: 0}
+  - ID: 6
+    Speaker: 0
+    SpeakerName: Abelinha
+    PreviousMessage: 4
+    NextMessage: 7
+    MessageText: "Minha colmeia foi destruida e eu acabei caindo no ch\xE3o, porque
+      n\xE3o estou conseguindo voar"
+    Clip: {fileID: 0}
+  - ID: 7
+    Speaker: 5
+    SpeakerName: Formiga
+    PreviousMessage: 6
+    NextMessage: 8
+    MessageText: puff Humanos, mais uma vez destruindo a natureza para fazer algo
+      de seu agrado sem pensar no que isso vai afetar a gente
+    Clip: {fileID: 0}
+  - ID: 8
+    Speaker: 0
+    SpeakerName: Abelinha
+    PreviousMessage: 7
+    NextMessage: 9
+    MessageText: "Humanos ? eles que fizeram isso ? \u2026"
+    Clip: {fileID: 0}
+  - ID: 9
+    Speaker: 5
+    SpeakerName: Formiga
+    PreviousMessage: 8
+    NextMessage: 10
+    MessageText: "Sim eles que fizeram, eles destroem tudo que vem pela frente s\xF3
+      para conseguir o que eles querem ..."
+    Clip: {fileID: 0}
+  - ID: 10
+    Speaker: 0
+    SpeakerName: Abelinha
+    PreviousMessage: 9
+    NextMessage: 12
+    MessageText: o que podemos fazer ?
+    Clip: {fileID: 0}
+  - ID: 13
+    Speaker: 0
+    SpeakerName: Abelinha
+    PreviousMessage: -1
+    NextMessage: -1
+    MessageText: Eu acho que podemos nos unir sim, e juntos mostrar para os humanos,
+      o que vamos fazer ?
+    Clip: {fileID: 0}
+  - ID: 14
+    Speaker: 0
+    SpeakerName: Abelinha
+    PreviousMessage: 12
+    NextMessage: -1
+    MessageText: 
+    Clip: {fileID: 0}
+  - ID: 15
+    Speaker: 0
+    SpeakerName: Abelinha
+    PreviousMessage: -1
+    NextMessage: -1
+    MessageText: 
+    Clip: {fileID: 0}
+  Choices:
+  - ID: 12
+    Choices:
+    - "bom n\xF3s podemos nos unir contra eles ou ficar apenas observando"
+    - " voc\xEA pode tentar encontrar outra colmeia longe daqui"
+    - "voc\xEA pode tentar encontrar esse humano e ferroar ele"
+    NextMessages: 0d0000000e0000000f000000

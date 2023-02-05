@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using QuantumTek.QuantumDialogue;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -220,6 +221,16 @@ namespace IndieMarc.TopDown
             PlayerCharacter[] list = new PlayerCharacter[character_list.Count];
             character_list.Values.CopyTo(list, 0);
             return list;
+        }
+
+        private void OnTriggerStay2D(Collider2D coll)
+        {
+            PlayerControls controls = PlayerControls.Get(player_id);
+            bool action = controls.GetActionDown();
+            if (coll.gameObject.GetComponent<QD_DialogueHandler>() && action)
+            {
+                GameManager.Instance.startNewDialogue(coll.gameObject);
+            }
         }
     }
 }

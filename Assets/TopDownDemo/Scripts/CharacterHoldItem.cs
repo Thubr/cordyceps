@@ -96,7 +96,7 @@ namespace IndieMarc.TopDown
 
         void OnCollisionStay2D(Collision2D coll)
         {
-            if (coll.gameObject.GetComponent<Door>() && held_item && held_item.GetComponent<Key>())
+            if (coll.gameObject.GetComponent<NPC>() && held_item && held_item.GetComponent<Key>())
             {
                 held_item.GetComponent<Key>().TryOpenDoor(coll.gameObject);
             }
